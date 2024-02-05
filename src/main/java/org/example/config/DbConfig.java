@@ -6,11 +6,11 @@ import org.example.util.ConfigurationUtils;
 import java.util.Properties;
 
 public class DbConfig {
-    private static final String CONFIG_FILE_PATH = "application.properties";
+    private static final String CONFIG_FILE_PATH = "hibernate.properties";
 
-    private static final String DB_URL_CONFIG_KEY = "url";
-    private static final String DB_USER_CONFIG_KEY = "user";
-    private static final String DB_PASSWORD_CONFIG_KEY = "password";
+    private static final String DB_URL_CONFIG_KEY = "hibernate.connection.url";
+    private static final String DB_USER_CONFIG_KEY = "hibernate.connection.user";
+    private static final String DB_PASSWORD_CONFIG_KEY = "hibernate.connection.password";
 
     public Properties getDbProperties() {
         return ConfigurationUtils.getPropertiesFromFile(CONFIG_FILE_PATH);

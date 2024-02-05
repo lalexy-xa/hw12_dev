@@ -11,9 +11,9 @@ import java.sql.SQLException;
 // then press Enter. You can now see whitespace characters in your code.
 public class Main {
     public static void main(String[] args) {
-//        Migration.getInstance().repair();
-//        Migration.getInstance().clean();
-//        Migration.getInstance().migrate();
+        Migration.getInstance().repair();
+        Migration.getInstance().clean();
+        Migration.getInstance().migrate();
 
         ClientCrudService clientSevice = new ClientCrudService();
 

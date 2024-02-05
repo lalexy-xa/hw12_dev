@@ -3,6 +3,7 @@ package org.example.config;
 import lombok.Getter;
 import org.example.hibernate_entities.Client;
 import org.example.hibernate_entities.Planet;
+import org.example.util.ConfigurationUtils;
 import org.hibernate.SessionFactory;
 import org.hibernate.cfg.Configuration;
 
